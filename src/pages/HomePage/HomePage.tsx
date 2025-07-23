@@ -1,7 +1,7 @@
 function HomePage() {
   return (
     <>
-      <p>Hello</p>
+      <p>Hello Motto</p>
     </>
   );
 }
