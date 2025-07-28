@@ -51,6 +51,11 @@ input,
 textarea,
 select {
   font: inherit;
+  border: none;
+}
+
+input:focus {
+  outline: 0;
 }
 
 @media (prefers-reduced-motion: reduce) {
