@@ -3,7 +3,7 @@ import "./CharacterInfo.scss";
 function CharacterInfo() {
   return (
     <section className="character-info">
-      <div className="character-info__name">
+      <div className="character-info__item">
         <input
           type="text"
           id="character-name"
