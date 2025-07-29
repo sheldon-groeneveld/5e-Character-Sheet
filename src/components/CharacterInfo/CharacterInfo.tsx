@@ -4,16 +4,7 @@ import "./CharacterInfo.scss";
 function CharacterInfo() {
   return (
     <section className="character-info">
-      <div className="character-info__item">
-        <input
-          type="text"
-          id="character-name"
-          className="character-info__input"
-        />
-        <label htmlFor="character-name" className="character-info__label">
-          Character Name
-        </label>
-      </div>
+      <InfoBox id={"character-name"} text={"Character Name"} />
 
       <div className="character-info__wrapper">
         <InfoBox id={"class-and-level"} text={"Class & Level"} />
