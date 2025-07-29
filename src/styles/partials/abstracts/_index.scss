@@ -1,0 +1,11 @@
+@forward "../mixins";
+@forward "../variables";
+
+// The purpose of this file is so that you can import mixins and variables in 1 line like so:
+
+// @use "../../../styles/partials/abstracts" as *;
+
+// Instead of this:
+
+// @use "../../../styles/partials/abstracts/mixins" as *;
+// @use "../../../styles/partials/abstracts/variables" as *;

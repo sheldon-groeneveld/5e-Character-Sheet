@@ -1,4 +1,4 @@
-@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/abstracts" as *;
 
 .character-info {
   display: flex;
@@ -7,8 +7,8 @@
   height: 280px;
   margin: 16px;
   gap: 1px;
-  border: 2px solid black;
-  background-color: black;
+  border: 2px solid $border-default;
+  background-color: $border-default;
 
   @include tablet {
     flex-direction: row;
@@ -32,7 +32,7 @@
     flex: 1 1 30%;
     display: flex;
     flex-direction: column;
-    background-color: white;
+    background-color: $primary-background;
   }
 
   &__input {
@@ -41,7 +41,7 @@
 
   &__label {
     width: 100%;
-    border-top: 1px solid black;
+    border-top: 1px solid $border-default;
     text-align: center;
     height: 20px;
     line-height: 20px;
