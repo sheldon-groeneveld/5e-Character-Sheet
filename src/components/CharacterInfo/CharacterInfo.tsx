@@ -1,3 +1,4 @@
+import InfoBox from "../atoms/InfoBox/InfoBox";
 import "./CharacterInfo.scss";
 
 function CharacterInfo() {
@@ -15,63 +16,12 @@ function CharacterInfo() {
       </div>
 
       <div className="character-info__wrapper">
-        <div className="character-info__item">
-          <input
-            type="text"
-            id="class-and-level"
-            className="character-info__input"
-          />
-          <label htmlFor="class-and-level" className="character-info__label">
-            Class & Level
-          </label>
-        </div>
-
-        <div className="character-info__item">
-          <input
-            type="text"
-            id="background"
-            className="character-info__input"
-          />
-          <label htmlFor="background" className="character-info__label">
-            Background
-          </label>
-        </div>
-
-        <div className="character-info__item">
-          <input
-            type="text"
-            id="player-name"
-            className="character-info__input"
-          />
-          <label htmlFor="player-name" className="character-info__label">
-            Player Name
-          </label>
-        </div>
-
-        <div className="character-info__item">
-          <input type="text" id="race" className="character-info__input" />
-          <label htmlFor="race" className="character-info__label">
-            Race
-          </label>
-        </div>
-
-        <div className="character-info__item">
-          <input type="text" id="alignment" className="character-info__input" />
-          <label htmlFor="alignment" className="character-info__label">
-            Alignment
-          </label>
-        </div>
-
-        <div className="character-info__item">
-          <input
-            type="text"
-            id="experience-points"
-            className="character-info__input"
-          />
-          <label htmlFor="experience-points" className="character-info__label">
-            Experience Points
-          </label>
-        </div>
+        <InfoBox id={"class-and-level"} text={"Class & Level"} />
+        <InfoBox id={"background"} text={"Background"} />
+        <InfoBox id={"player-name"} text={"Player Name"} />
+        <InfoBox id={"race"} text={"Race"} />
+        <InfoBox id={"alignment"} text={"Alignment"} />
+        <InfoBox id={"experience-points"} text={"Experience Points"} />
       </div>
     </section>
   );
