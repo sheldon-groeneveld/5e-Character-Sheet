@@ -1,20 +1,26 @@
 @use "../../../styles/partials/abstracts" as *;
 
 .info-box {
-  flex: 1 1 30%;
+  flex-grow: 1;
+  min-height: 80px;
   display: flex;
   flex-direction: column;
-  background-color: $primary-background;
+  background-color: $border-default;
+  gap: 1px;
 
   &__input {
     flex-grow: 1;
+    text-align: center;
   }
 
   &__label {
-    width: 100%;
-    border-top: 1px solid $border-default;
     text-align: center;
     height: 20px;
     line-height: 20px;
+    background-color: $primary-background;
+  }
+
+  &__copy {
+    padding: 0 8px;
   }
 }

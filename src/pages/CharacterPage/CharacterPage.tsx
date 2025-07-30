@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import { useState } from "react";
 
 import CharacterInfo from "../../components/CharacterInfo/CharacterInfo";
+import HealthInfo from "../../components/HealthInfo/HealthInfo";
 
 function CharacterPage() {
   const { CharacterName } = useParams();
@@ -15,6 +16,7 @@ function CharacterPage() {
     <>
       <main>
         <CharacterInfo />
+        <HealthInfo />
       </main>
     </>
   );
