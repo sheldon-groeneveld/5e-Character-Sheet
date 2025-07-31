@@ -8,33 +8,33 @@ function HealthInfo() {
         <InfoBox
           id="max-hp"
           text="Max HP"
-          mainClassName="health-info__box health-info__box--row"
+          mainClassName="health-info__box--row"
         />
         <InfoBox
           id="alt-max-hp"
           text="Alt Max HP"
-          mainClassName="health-info__box health-info__box--row"
+          mainClassName="health-info__box--row"
         />
       </div>
       <div className="health-info__container">
-        <InfoBox
-          id="current-hp"
-          text="Current HP"
-          mainClassName="health-info__box"
-        />
+        <InfoBox id="current-hp" text="Current HP" />
         <InfoBox id="temp-hp" text="Temp HP" mainClassName="health-info__box" />
       </div>
       <div className="health-info__container">
-        <InfoBox
-          id="hit-dice"
-          text="Hit Dice"
-          mainClassName="health-info__box"
-        />
+        <InfoBox id="hit-dice" text="Hit Dice" />
         <div className="health-info__wrapper">
-          <label htmlFor="">Successes</label>
-          <div>Success Check Boxes</div>
-          <label htmlFor="">Failures</label>
-          <div>Falure Check Boxes</div>
+          <p>Successes</p>
+          <div>
+            <span>Box 1 </span>
+            <span>Box 2 </span>
+            <span>Box 3 </span>
+          </div>
+          <p>Failures</p>
+          <div>
+            <span>Box 1 </span>
+            <span>Box 2 </span>
+            <span>Box 3 </span>
+          </div>
           <p>Death Saves</p>
         </div>
       </div>

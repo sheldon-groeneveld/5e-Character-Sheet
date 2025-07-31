@@ -6,7 +6,7 @@ interface props {
   mainClassName?: string;
 }
 
-function InfoBox({ id, text, mainClassName }: props) {
+function InfoBox({ id, text, mainClassName = "" }: props) {
   return (
     <div className={`info-box ${mainClassName}`}>
       <input type="text" id={id} className="info-box__input" />

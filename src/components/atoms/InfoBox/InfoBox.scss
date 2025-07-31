@@ -1,8 +1,8 @@
 @use "../../../styles/partials/abstracts" as *;
 
 .info-box {
-  flex-grow: 1;
-  min-height: 80px;
+  flex: 1 1;
+  min-height: 104px;
   display: flex;
   flex-direction: column;
   background-color: $border-default;
