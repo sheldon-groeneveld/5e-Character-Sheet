@@ -1,7 +1,12 @@
 import InfoBox from "../atoms/InfoBox/InfoBox";
 import "./HealthInfo.scss";
 
+import { useState } from "react";
+
 function HealthInfo() {
+  const [successes, setSuccesses] = useState(0);
+  const [failures, setFailures] = useState(0);
+
   return (
     <section className="health-info">
       <div className="health-info__container">
@@ -31,16 +36,64 @@ function HealthInfo() {
       <div className="health-info__container">
         <InfoBox id="hit-dice" text="Hit Dice" />
         <div className="health-info__wrapper">
-          <div className="health-info__check-boxes">
-            <span>Box 1 </span>
-            <span>Box 2 </span>
-            <span>Box 3 </span>
+          <div className="health-info__saves">
+            <span
+              className={
+                "health-info__checkbox " +
+                (successes > 0 ? "health-info__checkbox--checked" : "")
+              }
+              onClick={() => {
+                successes == 1 ? setSuccesses(0) : setSuccesses(1);
+              }}
+            ></span>
+            <span
+              className={
+                "health-info__checkbox " +
+                (successes > 1 ? "health-info__checkbox--checked" : "")
+              }
+              onClick={() => {
+                successes == 2 ? setSuccesses(0) : setSuccesses(2);
+              }}
+            ></span>
+            <span
+              className={
+                "health-info__checkbox " +
+                (successes > 2 ? "health-info__checkbox--checked" : "")
+              }
+              onClick={() => {
+                successes == 3 ? setSuccesses(0) : setSuccesses(3);
+              }}
+            ></span>
           </div>
           <p>Failures</p>
-          <div className="health-info__check-boxes">
-            <span>Box 1 </span>
-            <span>Box 2 </span>
-            <span>Box 3 </span>
+          <div className="health-info__saves">
+            <span
+              className={
+                "health-info__checkbox " +
+                (failures > 0 ? "health-info__checkbox--checked" : "")
+              }
+              onClick={() => {
+                failures == 1 ? setFailures(0) : setFailures(1);
+              }}
+            ></span>
+            <span
+              className={
+                "health-info__checkbox " +
+                (failures > 1 ? "health-info__checkbox--checked" : "")
+              }
+              onClick={() => {
+                failures == 2 ? setFailures(0) : setFailures(2);
+              }}
+            ></span>
+            <span
+              className={
+                "health-info__checkbox " +
+                (failures > 2 ? "health-info__checkbox--checked" : "")
+              }
+              onClick={() => {
+                failures == 3 ? setFailures(0) : setFailures(3);
+              }}
+            ></span>
           </div>
           <p>Death Saves</p>
         </div>
