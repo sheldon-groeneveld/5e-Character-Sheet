@@ -18,19 +18,26 @@ function HealthInfo() {
       </div>
       <div className="health-info__container">
         <InfoBox id="current-hp" text="Current HP" />
-        <InfoBox id="temp-hp" text="Temp HP" mainClassName="health-info__box" />
+        <InfoBox id="temp-hp" text="Temp HP" />
+      </div>
+      <div className="health-info__container">
+        <InfoBox
+          id="total-hit-dice"
+          text="Total"
+          mainClassName="health-info__box--row"
+        />
+        <p className="health-info__box">Successes</p>
       </div>
       <div className="health-info__container">
         <InfoBox id="hit-dice" text="Hit Dice" />
         <div className="health-info__wrapper">
-          <p>Successes</p>
-          <div>
+          <div className="health-info__check-boxes">
             <span>Box 1 </span>
             <span>Box 2 </span>
             <span>Box 3 </span>
           </div>
           <p>Failures</p>
-          <div>
+          <div className="health-info__check-boxes">
             <span>Box 1 </span>
             <span>Box 2 </span>
             <span>Box 3 </span>
