@@ -19,7 +19,7 @@ function HealthInfo() {
         />
         <InfoBox
           id="alt-max-hp"
-          text="Alt Max HP"
+          text="Alt Max"
           mainClassName="health-info__box--row"
         />
       </div>

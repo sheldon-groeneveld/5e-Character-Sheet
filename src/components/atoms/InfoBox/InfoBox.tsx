@@ -9,7 +9,7 @@ interface props {
 function InfoBox({ id, text, mainClassName = "" }: props) {
   return (
     <div className={`info-box ${mainClassName}`}>
-      <input type="text" id={id} className="info-box__input" />
+      <input type="text" id={id} className="info-box__input" size={1} />
       <label htmlFor={id} className="info-box__label">
         <p className="info-box__copy">{text}</p>
       </label>
