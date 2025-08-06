@@ -1,0 +1,14 @@
+@use "../../../styles/partials/abstracts" as *;
+
+.death-saves__checkbox {
+  text-align: center;
+  background-color: $primary-background;
+  flex: 1;
+  padding: 2px;
+  height: 24px;
+  border: 2px solid $primary-background;
+
+  &--checked {
+    background-color: $border-default;
+  }
+}
