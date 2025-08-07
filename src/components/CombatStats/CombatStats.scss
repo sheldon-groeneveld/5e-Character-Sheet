@@ -1,0 +1,8 @@
+@use "../../styles/partials/abstracts" as *;
+
+.combat-stats {
+  display: flex;
+  flex-direction: row;
+  gap: 1px;
+  background-color: $border-default;
+}

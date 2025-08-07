@@ -1,5 +1,5 @@
-import InfoBox from "../atoms/InfoBox/InfoBox";
 import "./CharacterInfo.scss";
+import InfoBox from "../atoms/InfoBox/InfoBox";
 
 function CharacterInfo() {
   return (

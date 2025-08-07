@@ -1,0 +1,11 @@
+@use "../../styles/partials/abstracts" as *;
+
+.grouping-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  border: 2px solid $border-default;
+  margin: 16px;
+  gap: 2px;
+  background-color: $border-default;
+}

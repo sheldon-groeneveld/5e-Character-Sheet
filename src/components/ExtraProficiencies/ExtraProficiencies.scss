@@ -1,0 +1,8 @@
+@use "../../styles/partials/abstracts" as *;
+
+.extra-proficiencies {
+  display: flex;
+  flex-direction: row;
+  gap: 1px;
+  background-color: $border-default;
+}
