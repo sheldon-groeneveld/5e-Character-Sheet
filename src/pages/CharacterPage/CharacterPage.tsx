@@ -7,6 +7,7 @@ import CombatStats from "../../components/CombatStats/CombatStats";
 import ExtraProficiencies from "../../components/ExtraProficiencies/ExtraProficiencies";
 
 import "./CharacterPage.scss";
+import ProficiencyAndInspiration from "../../components/ProficiencyAndInspiration/ProficiencyAndInspiration";
 
 function CharacterPage() {
   // const { CharacterName } = useParams();
@@ -20,6 +21,7 @@ function CharacterPage() {
     <>
       <main>
         <CharacterInfo />
+        <ProficiencyAndInspiration />
         <section className="grouping-wrapper">
           <CombatStats />
           <ExtraProficiencies />

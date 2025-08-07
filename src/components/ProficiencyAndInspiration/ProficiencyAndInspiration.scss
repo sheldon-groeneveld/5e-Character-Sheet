@@ -1,0 +1,23 @@
+@use "../../styles/partials/abstracts" as *;
+
+.prof-inspo {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 40%;
+  margin: 16px;
+  gap: 1px;
+  border: 2px solid $border-default;
+  background-color: $border-default;
+
+  height: 70px;
+
+  &__box--row {
+    flex-direction: row;
+    min-height: 0;
+    height: 35px;
+    & > * {
+      width: 50%;
+    }
+  }
+}

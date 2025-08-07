@@ -15,7 +15,8 @@
 
   &__label {
     text-align: center;
-    height: 20px;
+    align-content: center;
+    min-height: 20px;
     line-height: 20px;
     background-color: $primary-background;
     min-width: 86px;
