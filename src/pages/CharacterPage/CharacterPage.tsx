@@ -8,6 +8,7 @@ import ExtraProficiencies from "../../components/ExtraProficiencies/ExtraProfici
 
 import "./CharacterPage.scss";
 import ProficiencyAndInspiration from "../../components/ProficiencyAndInspiration/ProficiencyAndInspiration";
+import Abilities from "../../components/Abilities/Abilities";
 
 function CharacterPage() {
   // const { CharacterName } = useParams();
@@ -27,6 +28,7 @@ function CharacterPage() {
           <ExtraProficiencies />
         </section>
         <HealthInfo />
+        <Abilities />
       </main>
     </>
   );

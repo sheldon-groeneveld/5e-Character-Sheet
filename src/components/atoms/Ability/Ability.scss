@@ -1,0 +1,16 @@
+@use "../../../styles/partials/abstracts" as *;
+
+.ability {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin: 16px;
+  gap: 1px;
+  border: 2px solid $border-default;
+  background-color: $border-default;
+
+  &__wrapper {
+    flex-grow: 1;
+    background-color: $primary-background;
+  }
+}
