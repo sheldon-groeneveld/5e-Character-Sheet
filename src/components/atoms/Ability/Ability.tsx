@@ -25,10 +25,8 @@ function Ability({ id }: props) {
 
   return (
     <section className="ability">
-      <div className="ability__wrapper">
-        <InfoBox id={id} text={id} />
-      </div>
-      <div className="ability__wrapper">
+      <InfoBox id={id} text={id} />
+      <div className="ability__wrapper ability__wrapper--wide">
         <ul className="ability__list">
           {selectedAbility
             ? selectedAbility.skills.map((skill) => (
