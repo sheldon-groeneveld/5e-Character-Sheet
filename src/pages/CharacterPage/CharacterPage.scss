@@ -1,11 +1,20 @@
 @use "../../styles/partials/abstracts" as *;
 
-.grouping-wrapper {
+.page-row {
+  display: flex;
+  flex-direction: row;
+  // width: 100%;
+  margin: 16px;
+  gap: 16px;
+}
+
+.section-wrapper {
   display: flex;
   flex-direction: column;
-  width: 40%;
+  flex: 1 1 26%;
+  // width: 40%;
   border: 2px solid $border-default;
-  margin: 16px;
+  // margin: 16px;
   gap: 2px;
   background-color: $border-default;
 }

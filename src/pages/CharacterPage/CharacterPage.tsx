@@ -22,12 +22,14 @@ function CharacterPage() {
     <>
       <main>
         <CharacterInfo />
-        <ProficiencyAndInspiration />
-        <section className="grouping-wrapper">
-          <CombatStats />
-          <ExtraProficiencies />
+        <section className="page-row">
+          <ProficiencyAndInspiration />
+          <section className="section-wrapper">
+            <CombatStats />
+            <ExtraProficiencies />
+          </section>
+          <HealthInfo />
         </section>
-        <HealthInfo />
         <Abilities />
       </main>
     </>

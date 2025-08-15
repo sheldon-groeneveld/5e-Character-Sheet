@@ -3,7 +3,7 @@ import "./Abilities.scss";
 
 function Abilities() {
   return (
-    <section>
+    <section className="abilities">
       <Ability id={"Strength"} />
       <Ability id={"Dexterity"} />
       <Ability id={"Constitution"} />

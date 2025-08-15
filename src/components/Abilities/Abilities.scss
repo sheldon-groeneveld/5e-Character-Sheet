@@ -1,0 +1,9 @@
+@use "../../styles/partials/abstracts" as *;
+
+.abilities {
+  display: flex;
+  flex-direction: column;
+  width: 32%;
+  margin: 16px;
+  gap: 16px;
+}
