@@ -26,13 +26,14 @@ function Ability({ id }: props) {
   return (
     <section className="ability">
       <InfoBox id={id} text={id} />
-      <div className="ability__wrapper ability__wrapper--wide">
+      <div className="ability__wrapper">
         <ul className="ability__list">
           {selectedAbility
             ? selectedAbility.skills.map((skill) => (
                 <li className="ability__item">{skill.name}</li>
               ))
             : "Error Loading Skills"}
+          <li></li>
         </ul>
       </div>
     </section>
