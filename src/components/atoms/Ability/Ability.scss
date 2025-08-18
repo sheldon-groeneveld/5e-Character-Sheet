@@ -9,6 +9,22 @@
   background-color: $border-default;
   height: 129px;
 
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    background-color: $border-default;
+
+    &-modifier {
+      height: 62px;
+      background-color: $primary-background;
+    }
+
+    &-score {
+      min-height: 0;
+    }
+  }
+
   &__wrapper {
     flex-grow: 6;
     background-color: $primary-background;

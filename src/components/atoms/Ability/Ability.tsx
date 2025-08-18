@@ -25,7 +25,11 @@ function Ability({ id }: props) {
 
   return (
     <section className="ability">
-      <InfoBox id={id} text={id} />
+      <div className="ability__container">
+        <p className="ability__container-modifier"></p>
+        <InfoBox id={id} text={id} mainClassName="ability__container-score" />
+      </div>
+      {/* <InfoBox id={id} text={id} /> */}
       <div className="ability__wrapper">
         <ul className="ability__list">
           {selectedAbility
