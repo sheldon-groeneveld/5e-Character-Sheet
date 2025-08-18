@@ -30,7 +30,13 @@ function Ability({ id }: props) {
         <ul className="ability__list">
           {selectedAbility
             ? selectedAbility.skills.map((skill) => (
-                <li className="ability__item">{skill.name}</li>
+                <li
+                  className="ability__item"
+                  key={selectedAbility.skills.indexOf(skill)}
+                >
+                  <span>{skill.proficiency}</span>
+                  <span>{skill.name}</span>
+                </li>
               ))
             : "Error Loading Skills"}
           <li></li>

@@ -23,6 +23,14 @@
   }
 
   &__item {
-    background-color: $primary-background;
+    display: flex;
+    flex-direction: row;
+    gap: 1px;
+    background-color: $border-default;
+
+    & > * {
+      flex-grow: 1;
+      background-color: $primary-background;
+    }
   }
 }
