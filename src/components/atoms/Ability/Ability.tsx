@@ -26,8 +26,8 @@ function Ability({ id }: props) {
   return (
     <section className="ability">
       <div className="ability__container">
-        <p className="ability__container-modifier"></p>
-        <InfoBox id={id} text={id} mainClassName="ability__container-score" />
+        <p className="ability__modifier"></p>
+        <InfoBox id={id} text={id} mainClassName="ability__score" />
       </div>
       {/* <InfoBox id={id} text={id} /> */}
       <div className="ability__wrapper">
@@ -38,8 +38,11 @@ function Ability({ id }: props) {
                   className="ability__item"
                   key={selectedAbility.skills.indexOf(skill)}
                 >
-                  <span>{skill.proficiency}</span>
-                  <span>{skill.name}</span>
+                  <span className="ability__checkbox"></span>
+                  <span className="ability__proficiency">
+                    {skill.proficiency}
+                  </span>
+                  <span className="ability__skill-name">{skill.name}</span>
                 </li>
               ))
             : "Error Loading Skills"}
