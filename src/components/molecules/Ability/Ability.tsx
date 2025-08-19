@@ -1,7 +1,8 @@
 import "./Ability.scss";
 
 import skillsData from "../../../../data/skills.json";
-import InfoBox from "../InfoBox/InfoBox";
+import InfoBox from "../../atoms/InfoBox/InfoBox";
+import Skill from "../../atoms/Skill/Skill";
 
 interface props {
   id: string;
@@ -29,21 +30,15 @@ function Ability({ id }: props) {
         <p className="ability__modifier"></p>
         <InfoBox id={id} text={id} mainClassName="ability__score" />
       </div>
-      {/* <InfoBox id={id} text={id} /> */}
       <div className="ability__wrapper">
         <ul className="ability__list">
           {selectedAbility
             ? selectedAbility.skills.map((skill) => (
-                <li
-                  className="ability__item"
+                <Skill
                   key={selectedAbility.skills.indexOf(skill)}
-                >
-                  <span className="ability__checkbox"></span>
-                  <span className="ability__proficiency">
-                    {skill.proficiency}
-                  </span>
-                  <span className="ability__skill-name">{skill.name}</span>
-                </li>
+                  name={skill.name}
+                  proficiency={skill.proficiency}
+                />
               ))
             : "Error Loading Skills"}
           <li></li>

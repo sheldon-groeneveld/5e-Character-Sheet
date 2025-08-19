@@ -1,4 +1,4 @@
-import Ability from "../atoms/Ability/Ability";
+import Ability from "../molecules/Ability/Ability";
 import "./Abilities.scss";
 
 function Abilities() {

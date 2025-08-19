@@ -38,30 +38,4 @@
     background-color: $border-default;
     line-height: 20px;
   }
-
-  &__item {
-    display: flex;
-    flex-direction: row;
-    gap: 1px;
-    background-color: $border-default;
-  }
-
-  &__checkbox {
-    width: 11%;
-    padding: 2px;
-    background-color: $border-default;
-    border: 2px solid $primary-background;
-  }
-
-  &__proficiency {
-    width: 13%;
-    text-align: center;
-    background-color: $primary-background;
-  }
-
-  &__skill-name {
-    flex: 1 1;
-    padding-left: 8px;
-    background-color: $primary-background;
-  }
 }
