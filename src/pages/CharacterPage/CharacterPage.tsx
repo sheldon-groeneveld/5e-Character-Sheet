@@ -1,14 +1,15 @@
 // import { useParams } from "react-router-dom";
 // import { useState } from "react";
 
+import "./CharacterPage.scss";
+
 import CharacterInfo from "../../components/CharacterInfo/CharacterInfo";
 import HealthInfo from "../../components/HealthInfo/HealthInfo";
 import CombatStats from "../../components/CombatStats/CombatStats";
 import ExtraProficiencies from "../../components/ExtraProficiencies/ExtraProficiencies";
-
-import "./CharacterPage.scss";
 import ProficiencyAndInspiration from "../../components/ProficiencyAndInspiration/ProficiencyAndInspiration";
 import Abilities from "../../components/Abilities/Abilities";
+import CombatAttacks from "../../components/CombatAttacks/CombatAttacks";
 
 function CharacterPage() {
   // const { CharacterName } = useParams();
@@ -20,7 +21,7 @@ function CharacterPage() {
 
   return (
     <>
-      <main>
+      <main className="character-page">
         <CharacterInfo />
         <section className="page-row">
           <ProficiencyAndInspiration />
@@ -31,6 +32,7 @@ function CharacterPage() {
           <HealthInfo />
         </section>
         <Abilities />
+        <CombatAttacks />
       </main>
     </>
   );

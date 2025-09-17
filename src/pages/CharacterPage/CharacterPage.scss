@@ -1,5 +1,10 @@
 @use "../../styles/partials/abstracts" as *;
 
+.character-page {
+  display: flex;
+  flex-direction: column;
+}
+
 .page-row {
   display: flex;
   flex-direction: row;
